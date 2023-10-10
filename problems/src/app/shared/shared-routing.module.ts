@@ -7,9 +7,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    MenuComponent
-  ],
+  declarations: [],
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })

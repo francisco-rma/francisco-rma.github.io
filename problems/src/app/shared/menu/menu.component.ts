@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ModuleEnum } from '../enum/module.enum';
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.css']
 })
 
-// const modulePaths = {
-//   parseInt(ModuleEnum.Welcome): 'welcome/welcome',
-//   parseInt(ModuleEnum.Sorting): 'sorting/sorting',
-// }
+
 
 export class MenuComponent implements OnInit {
   constructor(private router: Router) { }
@@ -20,8 +17,21 @@ export class MenuComponent implements OnInit {
 
   public showModules: boolean = false;
 
+  public modulePaths: Object = {};
 
   ngOnInit(): void {
+    // const moduleNames = Object.keys(ModuleEnum);
+    // const moduleIds = Object.entries(ModuleEnum);
+    // // console.log(moduleIds, moduleNames);
+
+    // (Object.keys(ModuleEnum) as Array<keyof typeof ModuleEnum>).map(
+    //   (key, index) => {
+    //     // console.log(key, typeof key);
+    //     // console.log(index, typeof index);
+    //     console.log(ModuleEnum[key] + index)
+    //     return ModuleEnum[key] + index;
+    //   },
+    // );
 
   }
 

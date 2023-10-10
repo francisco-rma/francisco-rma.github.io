@@ -9,7 +9,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { SortingModule } from '../sorting/sorting.module';
-import { ModuleEnum } from './enum/module.enum';
 
 
 
@@ -20,7 +19,6 @@ import { ModuleEnum } from './enum/module.enum';
   imports: [
     CommonModule,
     RouterModule,
-    SortingModule,
     HttpClientModule,
     MatIconModule,
     BrowserAnimationsModule,

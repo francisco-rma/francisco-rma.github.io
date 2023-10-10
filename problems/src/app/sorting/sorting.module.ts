@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InsertionSortComponent } from './insertion-sort/insertion-sort.component';
 import { SortingRoutingModule } from './sorting-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -12,6 +13,7 @@ import { SortingRoutingModule } from './sorting-routing.module';
   imports: [
     CommonModule,
     SortingRoutingModule,
+    SharedModule,
   ],
   exports: [
     InsertionSortComponent,

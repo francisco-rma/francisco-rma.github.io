@@ -2,17 +2,18 @@
     <mat-icon (click)="showModules = !showModules">menu</mat-icon>
     <div class="categories" *ngIf="showModules">
         <ul>
-            <li (click)="navigate($event)" id="1">
-                Welcome
-            </li>
-            <li (click)="navigate($event)" id="2">
-                Sorting
-            </li>
+            <nav>
+                <li (click)="navigate($event)" id="1">
+                    <a class="button" routerLink="/welcome/welcome">Welcome</a>
+                    <mat-icon>chevron_right</mat-icon>
+                </li>
+                <li (click)="navigate($event)" id="2">
+                    <a class="button" routerLink="/sorting/insertion">Sorting algorithms</a>
+                    <mat-icon>chevron_right</mat-icon>
+                </li>
+            </nav>
         </ul>
     </div>
-    <nav>
-        <a routerLink="/sorting/insertion">Sort</a>
-    </nav>
     <div class="spacer"></div>
     <div class="ng-support">
         <img width="40" alt="Angular Logo"

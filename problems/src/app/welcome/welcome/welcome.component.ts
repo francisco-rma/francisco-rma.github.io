@@ -21,6 +21,14 @@ export class WelcomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.createCanvas();
+  }
+
+  clearCanvas() {
+    this.createCanvas();
+  }
+
+  createCanvas() {
     const sketch = (s: p5) => {
       s.setup = () => {
         let canvas2 = s.createCanvas(s.windowWidth - 200, s.windowHeight - 200);
@@ -71,12 +79,7 @@ export class WelcomeComponent implements OnInit {
     this.canvas = new p5(sketch);
   }
 
-  private createCanvas = () => {
-    console.log('creating canvas');
-    this.p5 = new p5(this.drawing);
-  }
-
-  private drawing = function (p: any) {
+  drawing = function (p: any) {
     // f5 setup
     p.setup = () => {
       p.createCanvas(p.windowWidth, p.windowHeight).parent('gear-clock-canvas');

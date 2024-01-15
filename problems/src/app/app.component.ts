@@ -15,6 +15,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     console.log('Initizalized');
 
-    this.router.navigate(['welcome/welcome']);
+    this.router.navigate(['welcome']);
   }
 }
